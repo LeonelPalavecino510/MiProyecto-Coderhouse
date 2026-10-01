@@ -5,61 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia Pulse | Inicio</title>
+    <!-- link a CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Tipografía principal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gloock&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <!--Tipografía secundaria -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gloock&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <!--Tipografía terciaria -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gloock&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
     <header>
-        <h1>Agencia Pulse</h1>
-
+        <a href="index.html" aria-label="Inicio Agencia Pulse">
+            <img src="img/img-navbar.webp" alt="Logo de Agencia Pulse" width="120" height="40" style="object-fit: contain;">
+        </a>
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/sobremi.html">Sobre mí</a></li>
-                <li><a href="pages/proyectos.html">Proyectos</a></li>
-                <li><a href="pages/FAQ.html">FAQ</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
+            <figure>
+                <img src="img/img-navbar-naranja-transparent.png" alt="Logo .Pulse">
+                <figcaption>Logo Agencia .Pulse</figcaption>
+            </figure>
+                <ul>
+                    <li><a class="btn-seleccionado" href="index.html">INICIO</a></li>
+                    <li><a class="btn-secundario" href="pages/sobremi.html">SOBRE MÍ</a></li>
+                    <li><a class="btn-secundario" href="pages/proyectos.html">PROYECTOS</a></li>
+                    <li><a class="btn-secundario" href="pages/FAQ.html">FAQ</a></li>
+                    <li><a class="btn-secundario" href="pages/contacto.html">CONTACTO</a></li>
+                </ul>
+                    <div class="btn-hablemos">
+                        <a href="">Hablemos!</a>
+                    </div>
         </nav>
     </header>
-
     <main>
-
-        <section>
+        <section class="section-I">
             <article>
-            <h2>Bienvenido a mi sitio</h2>
-            <h3>¿Quién soy?</h3>
-            <p>
-                Hola me presento, mi nombre es Leonel Palavecino, tengo 20 años. Actualmente trabajo y juego al fútbol, además cuento con dos emprendimientos. El primero vendo botines de fútbol y el segundo hago landing pages y sitios institucionales. Con este curso de Full-Stack, busco poder ampliar mi conocimiento y poder crear en un futuro sitios para e-commerce.
+                <p class="texto-inline">disponibilidad inmediata</p>
+                <h2 class="title-main">Diseño y Desarrollo Web <br> que <span class="texto-naranja">Multiplica</span> tu <br> impacto </h2>
+            <p class="texto-main">
+                Creamos experiencias digitales de alto rendimiento. <br> Combinamos precisión técnica con una estética editorial <br> que convierte <span class="italic">visitantes en clientes</span>.
             </p>
-
-            <figure>
-                <img src="img/favicon.png" alt="Logo de Agencia Pulse">
-                <figcaption>Logo de Agencia Pulse</figcaption>
-            </figure>
+                <figure>
+                    <img class="sombra-main" src="img/sombra-main-transparent.png" alt="Logo de Agencia Pulse">
+                    <figcaption>Logo de Agencia Pulse</figcaption>
+                </figure>
             </article>
         </section>
 
-        <section>
-            <h2>Información general</h2>
-            <h3>Estado actual</h3>
-            <p>
-                Actualmente no estoy programando dado a mis tiempos, pero quiero hacer de vuelta la página para mi agencia de diseño y desarrollo web
-            </p>
-                </section>
-
-
-        <section>
-            <h2>Servicios</h2>
-            <h3>¿Qué ofrecemos?</h3>
-
-            <ul>
-                <li>Landing pages</li>
-                <li>Sitios Institucionales</li>
-                <li>E-commerce (coming soon...)</li>
-            </ul>
+        <section class="section-II">
+            <h3 class="title-secundario">¿Qué tipo de páginas realizamos?</h3>
+            <section class="seccion-tarjetas">
+                <div class="tarjetas-II">
+                    <p class="title-tarjetas">Landing Page</p>
+                    <p class="color-p">Página web diseñada para presentar un producto, servicio o propuesta específica y lograr una acción concreta, como contactar, comprar o solicitar un turno.</p>
+                </div>
+                    <div class="tarjetas-II">
+                        <p class="title-tarjetas">Institucional</p>
+                        <p class="color-p">Página web corporativa que refleja la identidad, valores y servicios de una empresa. Funciona como su "sede digital" oficial.</p>
+                    </div>
+                        <div class="tarjetas-II">
+                            <p class="title-tarjetas">E-commerce</p>
+                            <p class="color-p">Tienda online con catálogo de productos, carrito de compras y pasarela de pagos integrada para vender productos o servicios directamente a través de internet.</p>
+                        </div>
+            </section>
         </section>
-
     </main>
 
     <footer>

@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    /* Fondos */
+    --fondo-principal: #1d100a;
+    --fondo-secundario: #170b06;
+    --fondo-tarjetas: #2b1c16;
+    --fondo-destacado: #362720;
+    
+    /* Textos */
+    --texto-principal: #f8ddd2;
+    --texto-secundario: #e2bfb0;
+    --texto-oscuro: #561f00;
+    --texto-boton-naranja: #572000;
+    
+    /* Colores de marca y botones */
+    --naranja-claro: #ffb693;
+    --naranja-vibrante: #ff6b00; /* Para botones principales y llamadas a la acción */
+    --azul-celeste: #9ccaff;
+    --azul-brillante: #059eff;
+    
+    /* Bordes y líneas */
+    --borde-sutil: rgb(90, 65, 54); /* #5a4136 */
+    --borde-claro: rgb(169, 138, 125); /* #a98a7d */
+    
+    /* Estados y alertas */
+    --error-fondo: #93000a;
+    --error-texto: #ffb4ab;
+
+    /* Fuentes */
+    --fuente-epilogue: 'Epilogue', sans-serif;   /* titulos y encabezados */
+    --fuente-inter: 'Inter', sans-serif;      /* textos */
+    --fuente-space-grotesk: 'Space Grotesk', sans-serif; /* botones y llamadas a la accion */
+    
+}
+/* navbar */
+nav {
+    margin:0;
+    padding: 1rem 8rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #25150e;
+    border-bottom:3px solid  rgb(42, 32, 27)  ;
+}
+
+nav ul {
+    font-family: var(--fuente-space-grotesk);
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 5rem;
+    text-decoration:none;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    transition: ease-in 0.5s ;
+
+
+}
+/* botones navbar */
+.btn-seleccionado {
+    color: var(--naranja-vibrante) ;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: ease-in 0.5s ;
+
+}
+
+.btn-hablemos a {
+    border-radius: 10px;
+    background: var(--naranja-vibrante);
+    color: var(--texto-principal);
+    text-decoration: none;
+    padding: 12px 24px;
+    font-family: var(--fuente-space-grotesk);
+    font-weight: 600;
+    color: #000000;
+    font-size: 17px;
+}
+
+.btn-secundario {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+/* configuración de imagen y figcaption */
+
+nav figure img {
+    max-width: 8rem;
+}
+
+figcaption {
+    display: none;
+}
+
+header > a {
+    display: none;
+}
+/* sombra */
+.sombra-main {
+    width: 850px;
+    height: 500px;
+}
+
+
+/* cuerpo */
+/* section I */
+body {
+    background-color: var(--fondo-principal);
+    color: var(--texto-principal);
+    margin: 0;
+    min-height: 100vh;
+}
+.section-I {
+    margin-left:2rem;
+    margin-right:2rem;
+}
+.texto-inline {
+    display:inline-block;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    font-size: var(--fuente-space-grotesk);
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #f4f3f233;
+    padding: 7px 10px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: var(--fuente-epilogue);
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    
+}
+
+.title-main {
+    margin-left: 2rem;
+    line-height: 5rem;
+
+}
+
+.texto-naranja {
+    color: var(--naranja-vibrante)
+}
+
+.texto-main {
+    color:#E2BFB0;
+    font-size: 25px;
+    margin-left:2rem;
+    margin-top: 2.5rem;
+}
+
+.italic{
+    font-style:italic
+    
+}
+
+/* section II */
+section-II {
+    
+}
+
+h3 {
+    font-family: var(--fuente-epilogue);
+    font-size: 40px;
+    
+}
+
+.title-secundario {
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.seccion-tarjetas {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem; /* Agregamos espacio entre las tarjetas */
+    align-items:center;
+}
+
+.tarjetas-II {
+    text-align: center;
+    padding:  30px;
+    background-color: var(--naranja-vibrante);
+    border-radius: 20px;
+}
+
+.section-II {
+    margin-left: 3rem;
+    margin-right:3rem;
+}
+
+.title-tarjetas {
+    font-family: var(--fuente-space-grotesk);
+    font-size: 25px;
+    font-weight: 900;
+    font-style: italic;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    transition: ease-in 0.5s;
+
+}
+
+
+
+
+
+
+
+
+
