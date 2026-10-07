@@ -124,20 +124,30 @@ body {
     min-height: 100vh;
 }
 .section-I {
-    margin-left:2rem;
-    margin-right:2rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 20px;
 }
 .texto-inline {
     display:inline-block;
+    align-self: flex-start;
     margin-top: 5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-left: 2rem;
     font-family: var(--fuente-space-grotesk);
     letter-spacing: 2px;
     font-size: 12px;
     text-transform: uppercase;
     background-color: #f4f3f233;
-    padding: 7px 10px;
+    padding: 7px 20px;
     border-radius: 15px;
     font-weight: 700;
 }
@@ -151,7 +161,6 @@ h2 {
 }
 
 .title-main {
-    margin-left: 2rem;
     line-height: 5rem;
     font-family: var(--fuente-epilogue);
     font-size: 5rem;
@@ -167,8 +176,6 @@ h2 {
 .texto-main {
     color:#E2BFB0;
     font-size: 25px;
-    margin-left:2rem;
-    margin-top: 2.5rem;
 }
 
 .italic{
@@ -186,8 +193,6 @@ h3 {
 
 .title-secundario {
     text-align: center;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
     font-family: var(--fuente-epilogue);
     font-size: 40px;
 }
@@ -208,8 +213,10 @@ h3 {
 }
 
 .section-II {
-    margin-left: 3rem;
-    margin-right:3rem;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .title-tarjetas {
@@ -217,8 +224,6 @@ h3 {
     font-size: 25px;
     font-weight: 900;
     font-style: italic;
-    margin-bottom: 15px;
-    margin-top: 15px;
     transition: ease-in 0.5s;
     text-align: center;
 }
