@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 :root {
     /* Fondos */
     --fondo-principal: #1d100a;
@@ -50,6 +49,14 @@ nav {
     border-bottom:3px solid  rgb(42, 32, 27)  ;
 }
 
+/* Contenedor que agrupa ul + botón "Hablemos" */
+.nav-enlaces {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+
 nav ul {
     font-family: var(--fuente-space-grotesk);
     display: flex;
@@ -61,8 +68,6 @@ nav ul {
     font-weight: 600;
     letter-spacing: 3px;
     transition: ease-in 0.5s ;
-
-
 }
 /* botones navbar */
 .btn-seleccionado {
@@ -70,7 +75,6 @@ nav ul {
     text-decoration: none;
     border-radius: 15px;
     transition: ease-in 0.5s ;
-
 }
 
 .btn-hablemos a {
@@ -116,6 +120,11 @@ header > a {
 
 
 /* cuerpo */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 /* section I */
 body {
     background-color: var(--fondo-principal);
@@ -226,12 +235,14 @@ h3 {
     font-style: italic;
     transition: ease-in 0.5s;
     text-align: center;
+    color: #000000;
 }
 
 .color-p {
     color: var(--texto-secundario);
     font-size: 16px;
     line-height: 1.5;
+
 }
 
 /* footer */
@@ -260,4 +271,37 @@ footer p {
     font-family: var(--fuente-inter);
     font-size: 14px;
     color: var(--texto-secundario);
+}
+
+/* Lista de contacto en páginas secundarias */
+.lista-contacto {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: var(--fuente-inter);
+    font-size: 18px;
+    color: var(--texto-secundario);
+    padding: 1rem 0;
+}
+
+.lista-contacto a {
+    color: var(--naranja-claro);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.lista-contacto a:hover {
+    color: var(--naranja-vibrante);
+}
+
+/* Links dentro de textos */
+.texto-main a {
+    color: var(--naranja-claro);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.texto-main a:hover {
+    color: var(--naranja-vibrante);
 }
